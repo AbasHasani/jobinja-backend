@@ -16,7 +16,7 @@ const Employer = require("./schemas/employers");
 const requests = require("./routes/requests")
 // Initilizing express app
 const app = express();
-const port = process.env.local || 4000;
+const port = process.env.PORT || 4000;
 // Using stuff on app
 app.use(express.json());
 app.use(cors());
